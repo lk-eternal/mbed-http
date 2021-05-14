@@ -1,0 +1,691 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 12pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">http_request_builder.h<br>変更前</th>
+<th colspan="2" class="title" style="width:50.000000%">http_request_builder.h<br>変更後</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf9b2">/*</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf9b2">/*</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf9b2"> * PackageLicenseDeclared: Apache-2.0</span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf9b2"> * PackageLicenseDeclared: Apache-2.0</span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf9b2"> * Copyright (c) 2017 ARM Limited</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf9b2"> * Copyright (c) 2017 ARM Limited</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf9b2"> *</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf9b2"> *</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf9b2"> * Licensed under the Apache License, Version 2.0 (the "License");</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf9b2"> * Licensed under the Apache License, Version 2.0 (the "License");</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf9b2"> * you may not use this file except in compliance with the License.</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf9b2"> * you may not use this file except in compliance with the License.</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf9b2"> * You may obtain a copy of the License at</span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf9b2"> * You may obtain a copy of the License at</span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf9b2"> *</span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf9b2"> *</span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf9b2"> * &nbsp; &nbsp; http://www.apache.org/licenses/LICENSE-<wbr>2.0</span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf9b2"> * &nbsp; &nbsp; http://www.apache.org/licenses/LICENSE-<wbr>2.0</span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf9b2"> *</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf9b2"> *</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf9b2"> * Unless required by applicable law or agreed to in writing, software</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf9b2"> * Unless required by applicable law or agreed to in writing, software</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf9b2"> * distributed under the License is distributed on an "AS IS" BASIS,</span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf9b2"> * distributed under the License is distributed on an "AS IS" BASIS,</span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf9b2"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf9b2"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf9b2"> * See the License for the specific language governing permissions and</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf9b2"> * See the License for the specific language governing permissions and</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf9b2"> * limitations under the License.</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf9b2"> * limitations under the License.</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf9b2"> */</span>&nbsp;</code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf9b2"> */</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">17</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf13b2">#ifndef _MBED_HTTP_REQUEST_BUILDER_H_</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf13b2">#ifndef _MBED_HTTP_REQUEST_BUILDER_H_</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf13b2">#define _MBED_HTTP_REQUEST_BUILDER_H_</span></code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf13b2">#define _MBED_HTTP_REQUEST_BUILDER_H_</span></code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">20</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf13b2">#include &lt;string&gt;</span></code></td>
+<td class="ln">21</td><td class="sf3b2"><code><span class="sf13b2">#include &lt;string&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf13b2">#include &lt;map&gt;</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf13b2">#include &lt;map&gt;</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf13b2">#include "http_parser.h"</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf13b2">#include "http_parser.h"</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf13b2">#include "http_parsed_url.h"</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf13b2">#include "http_parsed_url.h"</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">25</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf7b2">class</span><span class="sf11b2"> </span><span class="sf3b2">HttpRequestBuilder</span><span class="sf11b2"> {</span></code></td>
+<td class="ln">26</td><td class="sf3b2"><code><span class="sf7b2">class</span><span class="sf11b2"> </span><span class="sf3b2">HttpRequestBuilder</span><span class="sf11b2"> {</span></code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf7b2">public</span><span class="sf11b2">:</span></code></td>
+<td class="ln">27</td><td class="sf3b2"><code><span class="sf7b2">public</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf8b2">HttpRequestBuilder</span><span class="sf11b2">(</span><span class="sf3b2">http_method</span><span class="sf11b2"> </span><span class="sf3b2">a_method</span><span class="sf11b2">, </span><span class="sf3b2">ParsedUrl</span><span class="sf11b2">* </span><span class="sf3b2">a_parsed_url</span><span class="sf11b2">)</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf8b2">HttpRequestBuilder</span><span class="sf11b2">(</span><span class="sf3b2">http_method</span><span class="sf11b2"> </span><span class="sf3b2">a_method</span><span class="sf11b2">, </span><span class="sf3b2">ParsedUrl</span><span class="sf11b2">* </span><span class="sf3b2">a_parsed_url</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;: </span><span class="sf8b2">method</span><span class="sf11b2">(</span><span class="sf3b2">a_method</span><span class="sf11b2">), </span><span class="sf8b2">parsed_url</span><span class="sf11b2">(</span><span class="sf3b2">a_parsed_url</span><span class="sf11b2">)</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;: </span><span class="sf8b2">method</span><span class="sf11b2">(</span><span class="sf3b2">a_method</span><span class="sf11b2">), </span><span class="sf8b2">parsed_url</span><span class="sf11b2">(</span><span class="sf3b2">a_parsed_url</span><span class="sf11b2">)</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;{</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;{</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">string</span><span class="sf11b2"> </span><span class="sf8b2">host</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">host</span><span class="sf11b2">());</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">string</span><span class="sf11b2"> </span><span class="sf8b2">host</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">host</span><span class="sf11b2">());</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">32</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2"> </span><span class="sf3b2">port_str</span><span class="sf11b2">[</span><span class="sf10b2">10</span><span class="sf11b2">];</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2"> </span><span class="sf3b2">port_str</span><span class="sf11b2">[</span><span class="sf10b2">10</span><span class="sf11b2">];</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">port_str</span><span class="sf11b2">, </span><span class="sf12b2">":%d"</span><span class="sf11b2">, </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">port</span><span class="sf11b2">());</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">port_str</span><span class="sf11b2">, </span><span class="sf12b2">":%d"</span><span class="sf11b2">, </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">port</span><span class="sf11b2">());</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">35</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf8b2">strcmp</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">schema</span><span class="sf11b2">(), </span><span class="sf12b2">"http"</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2"> &amp;&amp; </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">port</span><span class="sf11b2">() != </span><span class="sf10b2">80</span><span class="sf11b2">) {</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf8b2">strcmp</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">schema</span><span class="sf11b2">(), </span><span class="sf12b2">"http"</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2"> &amp;&amp; </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">port</span><span class="sf11b2">() != </span><span class="sf10b2">80</span><span class="sf11b2">) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">host</span><span class="sf11b2"> += </span><span class="sf8b2">string</span><span class="sf11b2">(</span><span class="sf3b2">port_str</span><span class="sf11b2">);</span></code></td>
+<td class="ln">37</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">host</span><span class="sf11b2"> += </span><span class="sf8b2">string</span><span class="sf11b2">(</span><span class="sf3b2">port_str</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">else</span><span class="sf11b2"> </span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf8b2">strcmp</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">schema</span><span class="sf11b2">(), </span><span class="sf12b2">"https"</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2"> &amp;&amp; </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">port</span><span class="sf11b2">() != </span><span class="sf10b2">443</span><span class="sf11b2">) {</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">else</span><span class="sf11b2"> </span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf8b2">strcmp</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">schema</span><span class="sf11b2">(), </span><span class="sf12b2">"https"</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2"> &amp;&amp; </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">port</span><span class="sf11b2">() != </span><span class="sf10b2">443</span><span class="sf11b2">) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">host</span><span class="sf11b2"> += </span><span class="sf8b2">string</span><span class="sf11b2">(</span><span class="sf3b2">port_str</span><span class="sf11b2">);</span></code></td>
+<td class="ln">40</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">host</span><span class="sf11b2"> += </span><span class="sf8b2">string</span><span class="sf11b2">(</span><span class="sf3b2">port_str</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">42</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">set_header</span><span class="sf11b2">(</span><span class="sf12b2">"Host"</span><span class="sf11b2">, </span><span class="sf3b2">host</span><span class="sf11b2">);</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">set_header</span><span class="sf11b2">(</span><span class="sf12b2">"Host"</span><span class="sf11b2">, </span><span class="sf3b2">host</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">45</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf9b2">/**</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf9b2">/**</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf9b2"> &nbsp; &nbsp; * Set a header for the request</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf9b2"> &nbsp; &nbsp; * Set a header for the request</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf9b2"> &nbsp; &nbsp; * If the key already exists, it will be overwritten...</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf9b2"> &nbsp; &nbsp; * If the key already exists, it will be overwritten...</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf9b2"> &nbsp; &nbsp; */</span>&nbsp;</code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf9b2"> &nbsp; &nbsp; */</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf7b2">void</span><span class="sf11b2"> </span><span class="sf8b2">set_header</span><span class="sf11b2">(</span><span class="sf3b2">string</span><span class="sf11b2"> </span><span class="sf3b2">key</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2"> </span><span class="sf3b2">value</span><span class="sf11b2">) {</span></code></td>
+<td class="ln">50</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf7b2">void</span><span class="sf11b2"> </span><span class="sf8b2">set_header</span><span class="sf11b2">(</span><span class="sf3b2">string</span><span class="sf11b2"> </span><span class="sf3b2">key</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2"> </span><span class="sf3b2">value</span><span class="sf11b2">) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;::</span><span class="sf3b2">iterator</span><span class="sf11b2"> </span><span class="sf3b2">it</span><span class="sf11b2"> = </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">find</span><span class="sf11b2">(</span><span class="sf3b2">key</span><span class="sf11b2">);</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;::</span><span class="sf3b2">iterator</span><span class="sf11b2"> </span><span class="sf3b2">it</span><span class="sf11b2"> = </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">find</span><span class="sf11b2">(</span><span class="sf3b2">key</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">52</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf3b2">it</span><span class="sf11b2"> != </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">()) {</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf3b2">it</span><span class="sf11b2"> != </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">()) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2"> = </span><span class="sf3b2">value</span><span class="sf11b2">;</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2"> = </span><span class="sf3b2">value</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">55</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">else</span><span class="sf11b2"> {</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">else</span><span class="sf11b2"> {</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">insert</span><span class="sf11b2">(</span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">(), </span><span class="sf3b2">pair</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;(</span><span class="sf3b2">key</span><span class="sf11b2">, </span><span class="sf3b2">value</span><span class="sf11b2">));</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">insert</span><span class="sf11b2">(</span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">(), </span><span class="sf3b2">pair</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;(</span><span class="sf3b2">key</span><span class="sf11b2">, </span><span class="sf3b2">value</span><span class="sf11b2">));</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">58</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">60</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf8b2">build</span><span class="sf11b2">(</span><span class="sf7b2">const</span><span class="sf11b2"> </span><span class="sf7b2">void</span><span class="sf11b2">* </span><span class="sf3b2">body</span><span class="sf11b2">, </span><span class="sf3b2">uint32_t</span><span class="sf11b2"> </span><span class="sf3b2">body_size</span><span class="sf11b2">, </span><span class="sf3b2">uint32_t</span><span class="sf11b2"> &amp;</span><span class="sf3b2">size</span><span class="sf11b2">, </span><span class="sf7b2">bool</span><span class="sf11b2"> </span><span class="sf3b2">skip_content_length</span><span class="sf11b2"> = </span><span class="sf7b2">false</span><span class="sf11b2">) {</span></code></td>
+<td class="ln">61</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf8b2">build</span><span class="sf11b2">(</span><span class="sf7b2">const</span><span class="sf11b2"> </span><span class="sf7b2">void</span><span class="sf11b2">* </span><span class="sf3b2">body</span><span class="sf11b2">, </span><span class="sf3b2">uint32_t</span><span class="sf11b2"> </span><span class="sf3b2">body_size</span><span class="sf11b2">, </span><span class="sf3b2">uint32_t</span><span class="sf11b2"> &amp;</span><span class="sf3b2">size</span><span class="sf11b2">, </span><span class="sf7b2">bool</span><span class="sf11b2"> </span><span class="sf3b2">skip_content_length</span><span class="sf11b2"> = </span><span class="sf7b2">false</span><span class="sf11b2">) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">const</span><span class="sf11b2"> </span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">method_str</span><span class="sf11b2"> = </span><span class="sf8b2">http_method_str</span><span class="sf11b2">(</span><span class="sf3b2">method</span><span class="sf11b2">);</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">const</span><span class="sf11b2"> </span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">method_str</span><span class="sf11b2"> = </span><span class="sf8b2">http_method_str</span><span class="sf11b2">(</span><span class="sf3b2">method</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">63</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">bool</span><span class="sf11b2"> </span><span class="sf3b2">is_chunked</span><span class="sf11b2"> = </span><span class="sf8b2">has_header</span><span class="sf11b2">(</span><span class="sf12b2">"Transfer-Encoding"</span><span class="sf11b2">, </span><span class="sf12b2">"chunked"</span><span class="sf11b2">);</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">bool</span><span class="sf11b2"> </span><span class="sf3b2">is_chunked</span><span class="sf11b2"> = </span><span class="sf8b2">has_header</span><span class="sf11b2">(</span><span class="sf12b2">"Transfer-Encoding"</span><span class="sf11b2">, </span><span class="sf12b2">"chunked"</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">65</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">66</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; "> (!</span><span style="color: #000000; background-color: #efcb05; ">is_chunked</span><span style="color: #000000; background-color: #efcb05; "> &amp;&amp; (</span><span style="color: #000000; background-color: #efcb05; ">method</span><span style="color: #000000; background-color: #efcb05; "> == </span><span style="color: #000000; background-color: #efcb05; ">HTTP_POST</span><span style="color: #000000; background-color: #efcb05; "> || </span><span style="color: #000000; background-color: #efcb05; ">method</span><span style="color: #000000; background-color: #efcb05; "> == </span><span style="color: #000000; background-color: #efcb05; ">HTTP_PUT</span><span style="color: #000000; background-color: #efcb05; "> || </span><span style="color: #000000; background-color: #efcb05; ">method</span><span style="color: #000000; background-color: #efcb05; "> == </span><span style="color: #000000; background-color: #efcb05; ">HTTP_DELETE</span><span style="color: #000000; background-color: #efcb05; "> || </span><span style="color: #000000; background-color: #efcb05; ">body_size</span><span style="color: #000000; background-color: #efcb05; "> &gt; </span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">)) {</span></code></td>
+<td class="ln">66</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color: #000000; background-color: #efcb05; font-weight: bold; ">if</span><span style="color: #000000; background-color: #efcb05; "> (!</span><span class="sf17b18">has_header("Content-Length") &amp;&amp; !</span><span style="color: #000000; background-color: #efcb05; ">is_chunked</span><span style="color: #000000; background-color: #efcb05; "> &amp;&amp; (</span><span style="color: #000000; background-color: #efcb05; ">method</span><span style="color: #000000; background-color: #efcb05; "> == </span><span style="color: #000000; background-color: #efcb05; ">HTTP_POST</span><span style="color: #000000; background-color: #efcb05; "> || </span><span style="color: #000000; background-color: #efcb05; ">method</span><span style="color: #000000; background-color: #efcb05; "> == </span><span style="color: #000000; background-color: #efcb05; ">HTTP_PUT</span><span style="color: #000000; background-color: #efcb05; "> || </span><span style="color: #000000; background-color: #efcb05; ">method</span><span style="color: #000000; background-color: #efcb05; "> == </span><span style="color: #000000; background-color: #efcb05; ">HTTP_DELETE</span><span style="color: #000000; background-color: #efcb05; "> || </span><span style="color: #000000; background-color: #efcb05; ">body_size</span><span style="color: #000000; background-color: #efcb05; "> &gt; </span><span style="color: #000000; background-color: #efcb05; ">0</span><span style="color: #000000; background-color: #efcb05; ">)) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2"> </span><span class="sf3b2">buffer</span><span class="sf11b2">[</span><span class="sf10b2">10</span><span class="sf11b2">];</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2"> </span><span class="sf3b2">buffer</span><span class="sf11b2">[</span><span class="sf10b2">10</span><span class="sf11b2">];</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">snprintf</span><span class="sf11b2">(</span><span class="sf3b2">buffer</span><span class="sf11b2">, </span><span class="sf10b2">10</span><span class="sf11b2">, </span><span class="sf12b2">"%lu"</span><span class="sf11b2">, </span><span class="sf3b2">body_size</span><span class="sf11b2">);</span></code></td>
+<td class="ln">68</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">snprintf</span><span class="sf11b2">(</span><span class="sf3b2">buffer</span><span class="sf11b2">, </span><span class="sf10b2">10</span><span class="sf11b2">, </span><span class="sf12b2">"%lu"</span><span class="sf11b2">, </span><span class="sf3b2">body_size</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">set_header</span><span class="sf11b2">(</span><span class="sf12b2">"Content-Length"</span><span class="sf11b2">, </span><span class="sf8b2">string</span><span class="sf11b2">(</span><span class="sf3b2">buffer</span><span class="sf11b2">));</span></code></td>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">set_header</span><span class="sf11b2">(</span><span class="sf12b2">"Content-Length"</span><span class="sf11b2">, </span><span class="sf8b2">string</span><span class="sf11b2">(</span><span class="sf3b2">buffer</span><span class="sf11b2">));</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">71</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> = </span><span class="sf10b2">0</span><span class="sf11b2">;</span></code></td>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> = </span><span class="sf10b2">0</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">73</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// first line is METHOD PATH+QUERY HTTP/1.1\r\n</span></code></td>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// first line is METHOD PATH+QUERY HTTP/1.1\r\n</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> += </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">method_str</span><span class="sf11b2">) + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">path</span><span class="sf11b2">()) + (</span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">()) ? </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">()) + </span><span class="sf10b2">1</span><span class="sf11b2"> : </span><span class="sf10b2">0</span><span class="sf11b2">) + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf10b2">8</span><span class="sf11b2"> + </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+<td class="ln">75</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> += </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">method_str</span><span class="sf11b2">) + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">path</span><span class="sf11b2">()) + (</span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">()) ? </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">()) + </span><span class="sf10b2">1</span><span class="sf11b2"> : </span><span class="sf10b2">0</span><span class="sf11b2">) + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf10b2">8</span><span class="sf11b2"> + </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">76</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// after that we'll do the headers</span></code></td>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// after that we'll do the headers</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">typedef</span><span class="sf11b2"> </span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;::</span><span class="sf3b2">iterator</span><span class="sf11b2"> </span><span class="sf3b2">it_type</span><span class="sf11b2">;</span></code></td>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">typedef</span><span class="sf11b2"> </span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;::</span><span class="sf3b2">iterator</span><span class="sf11b2"> </span><span class="sf3b2">it_type</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">(</span><span class="sf3b2">it_type</span><span class="sf11b2"> </span><span class="sf3b2">it</span><span class="sf11b2"> = </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">begin</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2"> != </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2">++) {</span></code></td>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">(</span><span class="sf3b2">it_type</span><span class="sf11b2"> </span><span class="sf3b2">it</span><span class="sf11b2"> = </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">begin</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2"> != </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2">++) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// line is KEY: VALUE\r\n</span></code></td>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// line is KEY: VALUE\r\n</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> += </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">first</span><span class="sf11b2">.</span><span class="sf8b2">length</span><span class="sf11b2">() + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2">.</span><span class="sf8b2">length</span><span class="sf11b2">() + </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> += </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">first</span><span class="sf11b2">.</span><span class="sf8b2">length</span><span class="sf11b2">() + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2">.</span><span class="sf8b2">length</span><span class="sf11b2">() + </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">83</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// then the body, first an extra newline</span></code></td>
+<td class="ln">84</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// then the body, first an extra newline</span></code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> += </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> += </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">86</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (!</span><span class="sf3b2">is_chunked</span><span class="sf11b2">) {</span></code></td>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (!</span><span class="sf3b2">is_chunked</span><span class="sf11b2">) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// body</span></code></td>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// body</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> += </span><span class="sf3b2">body_size</span><span class="sf11b2">;</span></code></td>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">size</span><span class="sf11b2"> += </span><span class="sf3b2">body_size</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">91</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// Now let's print it</span></code></td>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// Now let's print it</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">req</span><span class="sf11b2"> = (</span><span class="sf7b2">char</span><span class="sf11b2">*)</span><span class="sf8b2">calloc</span><span class="sf11b2">(</span><span class="sf3b2">size</span><span class="sf11b2"> + </span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf10b2">1</span><span class="sf11b2">);</span></code></td>
+<td class="ln">93</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">req</span><span class="sf11b2"> = (</span><span class="sf7b2">char</span><span class="sf11b2">*)</span><span class="sf8b2">calloc</span><span class="sf11b2">(</span><span class="sf3b2">size</span><span class="sf11b2"> + </span><span class="sf10b2">1</span><span class="sf11b2">, </span><span class="sf10b2">1</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">originalReq</span><span class="sf11b2"> = </span><span class="sf3b2">req</span><span class="sf11b2">;</span></code></td>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">originalReq</span><span class="sf11b2"> = </span><span class="sf3b2">req</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">95</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">())) {</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">())) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf12b2">"%s %s?%s HTTP/1.1\r\n"</span><span class="sf11b2">, </span><span class="sf3b2">method_str</span><span class="sf11b2">, </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">path</span><span class="sf11b2">(), </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">());</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf12b2">"%s %s?%s HTTP/1.1\r\n"</span><span class="sf11b2">, </span><span class="sf3b2">method_str</span><span class="sf11b2">, </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">path</span><span class="sf11b2">(), </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">());</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;} </span><span class="sf7b2">else</span><span class="sf11b2"> {</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;} </span><span class="sf7b2">else</span><span class="sf11b2"> {</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf12b2">"%s %s%s HTTP/1.1\r\n"</span><span class="sf11b2">, </span><span class="sf3b2">method_str</span><span class="sf11b2">, </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">path</span><span class="sf11b2">(), </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">());</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf12b2">"%s %s%s HTTP/1.1\r\n"</span><span class="sf11b2">, </span><span class="sf3b2">method_str</span><span class="sf11b2">, </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">path</span><span class="sf11b2">(), </span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">());</span></code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">req</span><span class="sf11b2"> += </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">method_str</span><span class="sf11b2">) + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">path</span><span class="sf11b2">()) + (</span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">()) ? </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">()) + </span><span class="sf10b2">1</span><span class="sf11b2"> : </span><span class="sf10b2">0</span><span class="sf11b2">) + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf10b2">8</span><span class="sf11b2"> + </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">req</span><span class="sf11b2"> += </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">method_str</span><span class="sf11b2">) + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">path</span><span class="sf11b2">()) + (</span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">()) ? </span><span class="sf8b2">strlen</span><span class="sf11b2">(</span><span class="sf3b2">parsed_url</span><span class="sf11b2">-&gt;</span><span class="sf8b2">query</span><span class="sf11b2">()) + </span><span class="sf10b2">1</span><span class="sf11b2"> : </span><span class="sf10b2">0</span><span class="sf11b2">) + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf10b2">8</span><span class="sf11b2"> + </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">102</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">typedef</span><span class="sf11b2"> </span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;::</span><span class="sf3b2">iterator</span><span class="sf11b2"> </span><span class="sf3b2">it_type</span><span class="sf11b2">;</span></code></td>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">typedef</span><span class="sf11b2"> </span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;::</span><span class="sf3b2">iterator</span><span class="sf11b2"> </span><span class="sf3b2">it_type</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">(</span><span class="sf3b2">it_type</span><span class="sf11b2"> </span><span class="sf3b2">it</span><span class="sf11b2"> = </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">begin</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2"> != </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2">++) {</span></code></td>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">(</span><span class="sf3b2">it_type</span><span class="sf11b2"> </span><span class="sf3b2">it</span><span class="sf11b2"> = </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">begin</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2"> != </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2">++) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// line is KEY: VALUE\r\n</span></code></td>
+<td class="ln">105</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// line is KEY: VALUE\r\n</span></code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf12b2">"%s: %s\r\n"</span><span class="sf11b2">, </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">first</span><span class="sf11b2">.</span><span class="sf8b2">c_str</span><span class="sf11b2">(), </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2">.</span><span class="sf8b2">c_str</span><span class="sf11b2">());</span></code></td>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf12b2">"%s: %s\r\n"</span><span class="sf11b2">, </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">first</span><span class="sf11b2">.</span><span class="sf8b2">c_str</span><span class="sf11b2">(), </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2">.</span><span class="sf8b2">c_str</span><span class="sf11b2">());</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">req</span><span class="sf11b2"> += </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">first</span><span class="sf11b2">.</span><span class="sf8b2">length</span><span class="sf11b2">() + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2">.</span><span class="sf8b2">length</span><span class="sf11b2">() + </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">req</span><span class="sf11b2"> += </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">first</span><span class="sf11b2">.</span><span class="sf8b2">length</span><span class="sf11b2">() + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf10b2">1</span><span class="sf11b2"> + </span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2">.</span><span class="sf8b2">length</span><span class="sf11b2">() + </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">109</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf12b2">"\r\n"</span><span class="sf11b2">);</span></code></td>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">sprintf</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf12b2">"\r\n"</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">req</span><span class="sf11b2"> += </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">req</span><span class="sf11b2"> += </span><span class="sf10b2">2</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">112</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf3b2">body_size</span><span class="sf11b2"> &gt; </span><span class="sf10b2">0</span><span class="sf11b2">) {</span></code></td>
+<td class="ln">113</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf3b2">body_size</span><span class="sf11b2"> &gt; </span><span class="sf10b2">0</span><span class="sf11b2">) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">memcpy</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf3b2">body</span><span class="sf11b2">, </span><span class="sf3b2">body_size</span><span class="sf11b2">);</span></code></td>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf8b2">memcpy</span><span class="sf11b2">(</span><span class="sf3b2">req</span><span class="sf11b2">, </span><span class="sf3b2">body</span><span class="sf11b2">, </span><span class="sf3b2">body_size</span><span class="sf11b2">);</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">req</span><span class="sf11b2"> += </span><span class="sf3b2">body_size</span><span class="sf11b2">;</span></code></td>
+<td class="ln">116</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf3b2">req</span><span class="sf11b2"> += </span><span class="sf3b2">body_size</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">117</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// Uncomment to debug...</span></code></td>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// Uncomment to debug...</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// printf("----- BEGIN REQUEST -----\n");</span></code></td>
+<td class="ln">119</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// printf("----- BEGIN REQUEST -----\n");</span></code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// printf("%s", originalReq);</span></code></td>
+<td class="ln">120</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// printf("%s", originalReq);</span></code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// printf("----- END REQUEST -----\n");</span></code></td>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf9b2">// printf("----- END REQUEST -----\n");</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">122</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">return</span><span class="sf11b2"> </span><span class="sf3b2">originalReq</span><span class="sf11b2">;</span></code></td>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">return</span><span class="sf11b2"> </span><span class="sf3b2">originalReq</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">125</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf7b2">private</span><span class="sf11b2">:</span></code></td>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf7b2">private</span><span class="sf11b2">:</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf7b2">bool</span><span class="sf11b2"> </span><span class="sf8b2">has_header</span><span class="sf11b2">(</span><span class="sf7b2">const</span><span class="sf11b2"> </span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">key</span><span class="sf11b2">, </span><span class="sf7b2">const</span><span class="sf11b2"> </span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">value</span><span class="sf11b2"> = </span><span class="sf3b2">NULL</span><span class="sf11b2">) {</span></code></td>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf7b2">bool</span><span class="sf11b2"> </span><span class="sf8b2">has_header</span><span class="sf11b2">(</span><span class="sf7b2">const</span><span class="sf11b2"> </span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">key</span><span class="sf11b2">, </span><span class="sf7b2">const</span><span class="sf11b2"> </span><span class="sf7b2">char</span><span class="sf11b2">* </span><span class="sf3b2">value</span><span class="sf11b2"> = </span><span class="sf3b2">NULL</span><span class="sf11b2">) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">typedef</span><span class="sf11b2"> </span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;::</span><span class="sf3b2">iterator</span><span class="sf11b2"> </span><span class="sf3b2">it_type</span><span class="sf11b2">;</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">typedef</span><span class="sf11b2"> </span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt;::</span><span class="sf3b2">iterator</span><span class="sf11b2"> </span><span class="sf3b2">it_type</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">(</span><span class="sf3b2">it_type</span><span class="sf11b2"> </span><span class="sf3b2">it</span><span class="sf11b2"> = </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">begin</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2"> != </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2">++) {</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">for</span><span class="sf11b2">(</span><span class="sf3b2">it_type</span><span class="sf11b2"> </span><span class="sf3b2">it</span><span class="sf11b2"> = </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">begin</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2"> != </span><span class="sf3b2">headers</span><span class="sf11b2">.</span><span class="sf8b2">end</span><span class="sf11b2">(); </span><span class="sf3b2">it</span><span class="sf11b2">++) {</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf8b2">strcmp</span><span class="sf11b2">(</span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">first</span><span class="sf11b2">.</span><span class="sf8b2">c_str</span><span class="sf11b2">(), </span><span class="sf3b2">key</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2">) { </span><span class="sf9b2">// key matches</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf8b2">strcmp</span><span class="sf11b2">(</span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">first</span><span class="sf11b2">.</span><span class="sf8b2">c_str</span><span class="sf11b2">(), </span><span class="sf3b2">key</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2">) { </span><span class="sf9b2">// key matches</span></code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf3b2">value</span><span class="sf11b2"> == </span><span class="sf3b2">NULL</span><span class="sf11b2"> || (</span><span class="sf8b2">strcmp</span><span class="sf11b2">(</span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2">.</span><span class="sf8b2">c_str</span><span class="sf11b2">(), </span><span class="sf3b2">value</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2">)) { </span><span class="sf9b2">// value is NULL or matches</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">if</span><span class="sf11b2"> (</span><span class="sf3b2">value</span><span class="sf11b2"> == </span><span class="sf3b2">NULL</span><span class="sf11b2"> || (</span><span class="sf8b2">strcmp</span><span class="sf11b2">(</span><span class="sf3b2">it</span><span class="sf11b2">-&gt;</span><span class="sf3b2">second</span><span class="sf11b2">.</span><span class="sf8b2">c_str</span><span class="sf11b2">(), </span><span class="sf3b2">value</span><span class="sf11b2">) == </span><span class="sf10b2">0</span><span class="sf11b2">)) { </span><span class="sf9b2">// value is NULL or matches</span></code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">return</span><span class="sf11b2"> </span><span class="sf7b2">true</span><span class="sf11b2">;</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">return</span><span class="sf11b2"> </span><span class="sf7b2">true</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">136</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">return</span><span class="sf11b2"> </span><span class="sf7b2">false</span><span class="sf11b2">;</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sf7b2">return</span><span class="sf11b2"> </span><span class="sf7b2">false</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">139</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf3b2">http_method</span><span class="sf11b2"> </span><span class="sf3b2">method</span><span class="sf11b2">;</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf3b2">http_method</span><span class="sf11b2"> </span><span class="sf3b2">method</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf3b2">ParsedUrl</span><span class="sf11b2">* </span><span class="sf3b2">parsed_url</span><span class="sf11b2">;</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf3b2">ParsedUrl</span><span class="sf11b2">* </span><span class="sf3b2">parsed_url</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt; </span><span class="sf3b2">headers</span><span class="sf11b2">;</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf11b2"> &nbsp; &nbsp;</span><span class="sf3b2">map</span><span class="sf11b2">&lt;</span><span class="sf3b2">string</span><span class="sf11b2">, </span><span class="sf3b2">string</span><span class="sf11b2">&gt; </span><span class="sf3b2">headers</span><span class="sf11b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf11b2">};</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf11b2">};</span></code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">144</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf13b2">#endif </span><span class="sf9b2">// _MBED_HTTP_REQUEST_BUILDER_H_</span></code></td>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf13b2">#endif </span><span class="sf9b2">// _MBED_HTTP_REQUEST_BUILDER_H_</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">146</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
