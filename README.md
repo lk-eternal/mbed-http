@@ -1,7 +1,7 @@
 # mbed-http:
 
 ## 機能
-http/https機能(S3ダウンロードとアップロード)
+http/https機能
 
 ## ベースソースコード
 https://developer.mbed.org/teams/sandbox/code/mbed-http/#6daf67a96a91
